@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ Trụ Của Chúng Mình</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="universe">
+        <div class="stars"></div>
+        <div class="shooting-stars"></div>
+        
+        <div class="spaceship">
+            <div class="spaceship-body">
+                <div class="window"></div>
+                <div class="astronauts">
+                    <div class="astronaut boy"></div>
+                    <div class="astronaut girl"></div>
+                </div>
+            </div>
+            <div class="engine"></div>
+        </div>
+
+        <div class="planet earth" data-planet="earth"></div>
+        <div class="planet moon" data-planet="moon"></div>
+        <div class="planet mars" data-planet="mars"></div>
+        <div class="planet venus" data-planet="venus"></div>
+        <div class="planet jupiter" data-planet="jupiter"></div>
+        
+        <div class="container">
+            <header>
+                <h1 class="glowing-text">Vũ Trụ Của Hai Ta</h1>
+                <p class="subtitle">Một chuyến du hành qua dải ngân hà tình yêu</p>
+            </header>
+
+            <nav class="planet-nav">
+                <button class="planet-btn active" data-target="earth">Trái Đất</button>
+                <button class="planet-btn" data-target="moon">Mặt Trăng</button>
+                <button class="planet-btn" data-target="mars">Sao Hỏa</button>
+                <button class="planet-btn" data-target="venus">Sao Kim</button>
+                <button class="planet-btn" data-target="jupiter">Sao Mộc</button>
+            </nav>
+
+            <div id="content">
+                <!-- Trái Đất - Bắt đầu tình yêu -->
+                <div class="planet-content active" id="earth-content">
+                    <div class="orbit-date">
+                        <div class="orbit-circle">
+                            <span class="day">15</span>
+                            <span class="month">07</span>
+                            <span class="year">2024</span>
+                        </div>
+                        <h3>Ngày chúng ta tìm thấy nhau</h3>
+                    </div>
+                    
+                    <div class="story-section">
+                        <h2>Cuộc Gặp Gỡ Định Mệnh</h2>
+                        <div class="story-content">
+                            <div class="story-image">
+                                <div class="polaroid">
+                                    <img src="/api/placeholder/400/300" alt="Cuộc gặp đầu tiên">
+                                    <p class="caption">Ngày đầu tiên gặp Linh</p>
+                                </div>
+                            </div>
+                            <div class="story-text">
+                                <p>Trái Đất - nơi mọi câu chuyện bắt đầu. Ngày 15/07/2024, vũ trụ đã sắp đặt cho chúng ta gặp nhau tại [nơi hai bạn gặp nhau]. Đôi mắt ấy, nụ cười ấy - khoảnh khắc đó như một vì sao băng rực rỡ vụt qua bầu trời đời anh.</p>
+                                <p>Linh à, em có nhớ lời đầu tiên chúng ta nói với nhau không? "[Thêm chi tiết cuộc trò chuyện đầu tiên]"</p>
+                                <div class="time-orbit">
+                                    <div class="countdown-title">Chúng ta đã cùng nhau bay trong vũ trụ được:</div>
+                                    <div class="countdown">
+                                        <div class="time-unit">
+                                            <span id="days">0</span>
+                                            <span>Ngày</span>
+                                        </div>
+                                        <div class="time-unit">
+                                            <span id="hours">0</span>
+                                            <span>Giờ</span>
+                                        </div>
+                                        <div class="time-unit">
+                                            <span id="minutes">0</span>
+                                            <span>Phút</span>
+                                        </div>
+                                        <div class="time-unit">
+                                            <span id="seconds">0</span>
+                                            <span>Giây</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mặt Trăng - Những khoảnh khắc lãng mạn -->
+                <div class="planet-content" id="moon-content">
+                    <h2>Những Đêm Trăng Sáng Bên Em</h2>
+                    <div class="moon-gallery">
+                        <div class="moon-phase" id="moon-carousel">
+                            <div class="moon-slide">
+                                <div class="moon-card">
+                                    <div class="moon-front">
+                                        <img src="/image/26.jpg" alt="Khoảnh khắc 1">
+                                    </div>
+                                    <div class="moon-back">
+                                        <p>Buổi tối đầu tiên anh nắm tay em dưới ánh trăng</p>
+                                        <span class="date">20/07/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moon-slide">
+                                <div class="moon-card">
+                                    <div class="moon-front">
+                                        <img src="/image/26.jpg" alt="Khoảnh khắc 2">
+                                    </div>
+                                    <div class="moon-back">
+                                        <p>Bữa tối lãng mạn đầu tiên của chúng mình</p>
+                                        <span class="date">05/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moon-slide">
+                                <div class="moon-card">
+                                    <div class="moon-front">
+                                        <img src="/image/26.jpg" alt="Khoảnh khắc 3">
+                                    </div>
+                                    <div class="moon-back">
+                                        <p>Lần đầu tiên anh thấy em cười thật tươi</p>
+                                        <span class="date">15/08/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="moon-nav prev-moon"><i class="fas fa-chevron-left"></i></button>
+                        <button class="moon-nav next-moon"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="moon-quote">
+                        <blockquote>
+                            "Anh thích ngắm trăng, nhưng anh thích ngắm em hơn. Vì trăng chỉ sáng trên bầu trời, còn em thì thắp sáng cả trái tim anh."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Sao Hỏa - Những khám phá mới -->
+                <div class="planet-content" id="mars-content">
+                    <h2>Hành Trình Khám Phá</h2>
+                    <div class="mars-exploration">
+                        <div class="exploration-map">
+                            <div class="map-point" style="top: 30%; left: 20%;" data-place="điểm hẹn đầu tiên">
+                                <div class="point-details">
+                                    <h4>Điểm hẹn đầu tiên</h4>
+                                    <p>Nơi chúng ta có buổi hẹn hò đầu tiên</p>
+                                    <img src="/api/placeholder/300/200" alt="Điểm hẹn đầu tiên">
+                                </div>
+                            </div>
+                            <div class="map-point" style="top: 45%; left: 60%;" data-place="quán cafe yêu thích">
+                                <div class="point-details">
+                                    <h4>Quán cafe yêu thích của chúng mình</h4>
+                                    <p>Nơi chúng ta thường trò chuyện hàng giờ không chán</p>
+                                    <img src="/api/placeholder/300/200" alt="Quán cafe yêu thích">
+                                </div>
+                            </div>
+                            <div class="map-point" style="top: 70%; left: 35%;" data-place="công viên ưa thích">
+                                <div class="point-details">
+                                    <h4>Công viên ưa thích</h4>
+                                    <p>Nơi chúng ta thường dạo bộ vào chiều cuối tuần</p>
+                                    <img src="/api/placeholder/300/200" alt="Công viên ưa thích">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mars-memories">
+                            <h3>Những Điều Mới Mẻ Chúng Ta Đã Cùng Khám Phá</h3>
+                            <ul class="discovery-list">
+                                <li>
+                                    <span class="discovery-icon"><i class="fas fa-utensils"></i></span>
+                                    <div class="discovery-content">
+                                        <h4>Món ăn mới</h4>
+                                        <p>Lần đầu tiên em thử món [món ăn nào đó] mà anh giới thiệu</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="discovery-icon"><i class="fas fa-music"></i></span>
+                                    <div class="discovery-content">
+                                        <h4>Bài hát của chúng mình</h4>
+                                        <p>[Tên bài hát] - bài hát đặc biệt mà cả hai cùng yêu thích</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="discovery-icon"><i class="fas fa-film"></i></span>
+                                    <div class="discovery-content">
+                                        <h4>Bộ phim đầu tiên</h4>
+                                        <p>Bộ phim đầu tiên chúng mình xem cùng nhau tại rạp</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sao Kim - Những điều đáng yêu về Linh -->
+                <div class="planet-content" id="venus-content">
+                    <h2>Vẻ Đẹp Của Linh</h2>
+                    <div class="venus-features">
+                        <div class="feature-container">
+                            <div class="feature" id="feature1">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                                    <h3>Nụ Cười</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Nụ cười tỏa nắng của em làm trái tim anh tan chảy mỗi khi nhìn thấy</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature" id="feature2">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                                    <h3>Sự Quan Tâm</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Em luôn nhớ những điều nhỏ nhặt về anh, từ món ăn yêu thích đến những ngày đặc biệt</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature" id="feature3">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                                    <h3>Trí Thông Minh</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Anh luôn ngưỡng mộ sự thông minh và khả năng giải quyết vấn đề của em</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature" id="feature4">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                                    <h3>Sự Sáng Tạo</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Những ý tưởng sáng tạo của em luôn làm anh ngạc nhiên và thích thú</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature" id="feature5">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-laugh"></i></div>
+                                    <h3>Sự Hài Hước</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Em luôn biết cách làm anh cười, ngay cả trong những ngày tồi tệ nhất</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature" id="feature6">
+                                <div class="feature-front">
+                                    <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                                    <h3>Lòng Tốt</h3>
+                                </div>
+                                <div class="feature-back">
+                                    <p>Trái tim nhân hậu của em khiến anh ngày càng yêu em nhiều hơn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venus-poem">
+                        <h3>Thơ Cho Linh</h3>
+                        <div class="poem">
+                            <p>Em như sao Kim trên bầu trời đêm</p>
+                            <p>Rực rỡ nhất giữa muôn vàn tinh tú</p>
+                            <p>Ánh sáng em tỏa rạng trong tâm hồn anh</p>
+                            <p>Dẫn lối cho anh trong những đêm tăm tối</p>
+                            <p>Linh ơi, em là vì sao sáng nhất</p>
+                            <p>Trong vũ trụ rộng lớn của riêng anh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sao Mộc - Tương lai của chúng ta -->
+                <div class="planet-content" id="jupiter-content">
+                    <h2>Tương Lai Của Chúng Mình</h2>
+                    <div class="jupiter-dreams">
+                        <div class="dream-cloud">
+                            <h3>Những Mong Ước Của Anh</h3>
+                            <div class="wish-container">
+                                <div class="wish">
+                                    <div class="wish-icon"><i class="fas fa-home"></i></div>
+                                    <p>Một ngôi nhà nhỏ xinh với khu vườn đầy hoa</p>
+                                </div>
+                                <div class="wish">
+                                    <div class="wish-icon"><i class="fas fa-plane"></i></div>
+                                    <p>Cùng em du lịch khắp thế giới</p>
+                                </div>
+                                <div class="wish">
+                                    <div class="wish-icon"><i class="fas fa-book"></i></div>
+                                    <p>Viết nên câu chuyện tình yêu của riêng chúng mình</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="love-letter">
+                            <h3>Thư Gửi Tương Lai</h3>
+                            <div class="letter-paper">
+                                <p>Linh yêu dấu,</p>
+                                <p>Khi em đọc những dòng này, có lẽ chúng ta đã cùng nhau trải qua biết bao nhiêu khoảnh khắc đáng nhớ.</p>
+                                <p>Anh muốn cảm ơn em vì đã là ngôi sao sáng nhất trong vũ trụ của anh. Mỗi ngày bên em là một ngày anh biết ơn vũ trụ đã sắp đặt cho chúng ta gặp nhau.</p>
+                                <p>Anh không biết tương lai sẽ đưa chúng ta đến đâu, nhưng anh biết rằng chỉ cần có em bên cạnh, mọi hành tinh anh đặt chân đến đều sẽ trở thành thiên đường.</p>
+                                <p>Hãy cùng anh viết tiếp câu chuyện tình yêu này, Linh nhé. Từ Trái Đất đến những vì sao xa xôi nhất, tình yêu của anh dành cho em sẽ không bao giờ phai nhạt.</p>
+                                <p class="signature">Người yêu em mãi mãi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="message-capsule">
+                            <h3>Gửi Một Thông Điệp Cho Anh</h3>
+                            <div class="capsule-form">
+                                <textarea placeholder="Em hãy để lại lời nhắn cho anh..."></textarea>
+                                <button id="send-message">Gửi Vào Vũ Trụ <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="music-player">
+                    <h3>Bản Nhạc Của Chúng Mình</h3>
+                    <div class="player-controls">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <div class="song-info">
+                            <div class="song-title">Tên bài hát của hai bạn</div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                        </div>
+                    </div>
+                    <audio id="bgMusic" loop>
+                        <source src="nhac.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="signature">
+                    <p>Tạo với trọn vẹn tình yêu cho Linh <i class="fas fa-heart pulse"></i> 2025</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div id="messages-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
